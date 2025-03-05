@@ -1,0 +1,202 @@
+* {
+    
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+body {
+    background-image: url(./img/fundo2.png);
+    background-size: cover;
+    margin-left: 40px;
+}
+
+.h1 {
+    margin-top: 100px;
+    margin-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Sigmar", serif;
+}
+.h1:hover {
+    color: darkorange;
+}
+.titulo {
+    color: white;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    word-spacing: 40px;
+    font-family: "Sigmar", serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    /* width: 500px; */
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: "Sigmar", serif;
+    font-weight: lighter;
+    transition: ease-out .2s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 20px;
+}
+a:hover {
+    color:red;
+    /* font-size: 28px; */
+    transition: ease-in .2s;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+}
+
+
+
+h2 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "Sigmar", serif;
+    justify-content: center;
+}
+
+h2:hover {
+    color: darkorange;
+}
+
+.text-img { 
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+.astronauta {
+    
+    width: 300px;
+    transform: scaleX(-1);
+    margin-left: 120px;
+}
+
+.text-1 {
+    width: 700px;    
+    color: white; 
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 1.5;
+   font-weight: 100;
+   font-family: "Sigmar", serif;
+}
+
+.whatsapp {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 100px;
+    transition: ease-out 0.3s;
+}
+.whatsapp:hover{
+    width: 120px;
+    transition: ease-in 0.1s;
+}
+
+@media screen and (max-width:700px) {
+
+    .text-1 {
+        font-size: 10px;
+        margin-left: 0px;
+        text-align: center;
+        font-weight: lighter;
+
+    }
+
+.whatsapp {
+    
+    width: 60px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+.whatsapp:hover {
+    width: 75px;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 30px;
+    align-content: center;
+
+}
+
+.titulo {
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+a {
+    display: flex;
+    margin-left: none;
+    justify-content: left;
+    
+}
+
+.header { 
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    font-size: 10px;
+    
+}
+body {
+    background-image: url(./img/ham.jpeg);
+    background-size: auto;
+
+    margin-left: 20px;
+}
+
+.astronauta {
+    width: 200px;
+    margin-right:none;
+    transform: scaleX(+1);
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+h2 { 
+    margin-top: 90px;
+    font-size: 15px;
+    margin-bottom: none;
+}
+
+.text-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}

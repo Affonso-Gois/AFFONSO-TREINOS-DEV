@@ -1,0 +1,46 @@
+* {
+    padding: none;
+    margin: none;
+}
+
+body {
+    background-color: black;
+}
+
+.whatsapp {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 100px;
+    transition: ease-out 0.3s;
+}
+.whatsapp:hover{
+    width: 120px;
+    transition: ease-in 0.1s;
+}
+
+@media(max-width: 500px) {
+
+    img {
+
+        width: 400px;
+    }
+
+    .whatsapp {
+        width: 50px;
+      position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 30px;
+        margin-right: 150px;
+        transition: ease-out 0.3s;
+        
+    }
+    .whatsapp:hover{
+        width: 60px;
+        transition: ease-in 0.1s;
+    }
+
+}
