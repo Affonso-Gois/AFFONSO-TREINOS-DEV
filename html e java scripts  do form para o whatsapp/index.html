@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <label>Nome: <input type="text" id="nome" required></label><br><br>
+        <label>Mensagem: <textarea id="mensagem" required></textarea></label><br><br>
+        <button type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+    </form>
+
+    <script>
+        function enviarWhatsApp() {
+            // Pega os valores do formulário
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // Número do WhatsApp (com DDI e DDD) - Exemplo: +5511999999999
+            const numero = '+5521920072038';
+
+            // Monta a mensagem
+            const texto = `Olá, meu nome é ${nome}. 
+Minha mensagem: ${mensagem}`;
+
+            // Cria o link do WhatsApp
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+            // Redireciona para o WhatsApp
+            window.open(url, '_blank');
+        }
+    </script>
+    
+</body>
+</html>
